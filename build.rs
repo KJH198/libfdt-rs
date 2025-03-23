@@ -17,7 +17,7 @@ fn main() {
     println!("cargo:rerun-if-changed=wrapper.h");
     println!("cargo:rerun-if-changed=dtc/libfdt");
     println!("cargo:rerun-if-changed=build.rs");
-    println!("cargo:include=/usr/include/stdint.h");
+    println!("cargo:include=/usr/include");
 
     let fdt_dirs = ["./", "dtc/libfdt"];
     let c_files = fdt_dirs.iter().flat_map(|path| {
