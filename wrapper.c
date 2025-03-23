@@ -412,6 +412,6 @@ char* fdt_get_property_string(void *fdt, const char *path, const char *prop, int
     return NULL;
   }
   // 获取这个property的值，并返回
-  const char *ret = fdt_getprop(fdt, node, prop, len);
+  char *ret = fdt_getprop(fdt, node, prop, len);
   return ret;
 }
