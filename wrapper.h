@@ -1,4 +1,4 @@
-#include <stdint.h>
+#include "/usr/include/stdint.h"
 
 // Note: this module assume
 //  1. template uses #size-cells = <0x2> and #address-cells = <0x2>
